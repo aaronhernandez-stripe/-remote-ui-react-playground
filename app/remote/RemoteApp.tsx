@@ -36,7 +36,7 @@ export function RemoteApp({
     <Box withBorder>
       ---- From remote ui iframe: ----
       <Box>Message from host: {message}</Box>
-      <NoProps children={<>This should fail</>} />
+      <NoProps children={<>This should fail in TS</>} />
       <Button
         onPress={async () => {
           const message = await getMessage();
